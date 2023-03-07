@@ -1,0 +1,228 @@
+/* 
+    colors
+    blue #29d9d5
+    balck #111 rgba(17,17,17,0.7) #222
+    light-color rgb(14,13,13) #fff
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #111;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+span {
+    color: #29d9d5;
+}
+
+button {
+    color: #29d9d5;
+    background-color: transparent;
+    border: 2px solid #29d9d5;
+    padding: 0.7em 2em;
+    border-radius: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-block: 1rem;
+    transition: transform 0.25s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+input {
+    color: #29d9d5;
+    background-color: transparent;
+    border: 2px solid #29d9d5;
+    padding: 0.7em 2em;
+    border-radius: 1.5em;
+    font-weight: 600;
+    margin-block: 1rem;
+    transition: transform 0.25s;
+}
+
+i {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.containerInline {
+    padding-inline: 4rem;
+}
+
+.containerBlock {
+    padding-block: 3rem;
+}
+
+video {
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1em;
+    background-color: #29d9d5;
+    background-blend-mode: multiply;
+}
+
+header {
+    width: 100vw;
+    background-color: #222;
+}
+
+header nav {
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header nav ul {
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul a {
+    color: white;
+}
+
+header h4 i {
+    color: #29d9d5;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+#Home {
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    color: white;
+}
+
+#Home #hero {
+    padding-block: 10rem 4rem;
+    background-color: #29d9d5;
+    background-image: url(Images/mountain2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Home h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+}
+
+#Home h2 {
+    color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#Home #hero form {
+    min-width: 15rem;
+    background-color: #222;
+    border-radius: 1em;
+    gap: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: end;
+    margin-top: 6rem;
+}
+
+#Home #hero form div {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#About {
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#About #videoCarousel {
+    width: max-content;
+    overflow: hidden;
+}
+
+#About #videoCarousel div {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#About div:nth-child(2) {
+    width: 30rem;
+}
+
+/* media queries */
+@media (max-width:1000px) {
+    header .fa-bars {
+        display: block;
+        z-index: 2;
+    }
+
+    header nav ul {
+        position: absolute;
+        background-color: #222;
+        height: 100vh;
+        width: 25rem;
+        right: -25rem;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        transition: right 0.25s;
+    }
+
+    header nav ul a {
+        font-size: 2.5rem;
+    }
+
+    .navToggle {
+        right: 0 !important;
+    }
+}

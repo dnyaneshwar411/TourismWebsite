@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go! travel...</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="flex containerInline">
+            <h4><i class="fa-solid fa-paper-plane"></i> travel</h4>
+            <ul class="flex">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Destination">Destination</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+            </ul>
+            <button>Book now</button>
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section id="Home" class="containerInline containerBlock">
+        <div id="hero" class="flex">
+            <h2>Follow Us</h2>
+            <h1>To the unknown</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptate, excepturi dolorem
+                <br>necessitatibus
+                quidem optio!
+            </p>
+            <button>book now</button>
+
+            <form action="/" method="post" class="flex containerInline containerBlock">
+                <div class="flex">
+                    <label for="">Where to?</label>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="flex">
+                    <label for="">When?</label>
+                    <input type="text" placeholder="dd-mm-yyyy">
+                </div>
+                <div class="flex">
+                    <label for="">how many?</label>
+                    <input type="text" placeholder="no. of tourists">
+                </div>
+                <button>Find now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="About" class="flex containerInline containerBlock">
+        <div id="videoCarousel">
+            <video src="Images/video1.mp4" autoplay muted loop></video>
+            <div class="flex">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+        </div>
+        <div>
+            <span>Why choose us</span>
+            <h4>nature's majesty awaits you</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis enim asperiores repellat nulla
+                voluptatum hic alias cum doloribus quibusdam.</p>
+            <button>read more</button>
+        </div>
+    </section>
+
+
+    <!-- jscript link -->
+    <script src="main.js "></script>
+</body>
+
+</html>
