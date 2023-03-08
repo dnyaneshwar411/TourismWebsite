@@ -16,3 +16,17 @@ document.querySelectorAll("#About #videoCarousel .flex i")[1].addEventListener("
 document.querySelectorAll("#About #videoCarousel .flex i")[2].addEventListener("click", function () {
     videos.setAttribute("src", "Images/video3.mp4");
 })
+
+
+// animation delays
+for (i = 0; i < document.querySelectorAll("header nav ul li").length; i++) {
+    document.querySelectorAll("header nav ul li")[i].style.animationDelay = i * 0.3 + 's';
+}
+
+for (i = 0; i < document.querySelectorAll("#Destination #destCardList .card").length; i++) {
+    document.querySelectorAll("#Destination #destCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+}
+
+for (i = 0; i < document.querySelectorAll("#Services #servicesCardList .card").length; i++) {
+    document.querySelectorAll("#Services #servicesCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+}

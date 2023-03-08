@@ -94,6 +94,17 @@ i {
     padding-block: 3rem;
 }
 
+.animation1 {
+    animation: slideToTop 1s forwards;
+    opacity: 0;
+}
+
+.animation2 {
+    animation: slideToBottom 1s forwards;
+    opacity: 0;
+
+}
+
 video {
     max-height: 20rem;
     object-fit: cover;
@@ -229,6 +240,7 @@ header .fa-bars {
     flex-direction: column;
     align-items: center;
     padding-bottom: 1rem;
+    opacity: 0;
 }
 
 #Destination #destCardList .card div {
@@ -268,7 +280,7 @@ header .fa-bars {
     gap: 1rem;
 }
 
-#Services #servicesCardList .card i{
+#Services #servicesCardList .card i {
     color: #29d9d5;
     font-size: 4rem;
 }
@@ -301,4 +313,31 @@ header .fa-bars {
     .navToggle {
         right: 0 !important;
     }
+}
+
+/* animations */
+@keyframes slideToTop {
+    0% {
+        transform: translateY(20rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideToBottom {
+    0% {
+        transform: translateY(-20rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
 }
