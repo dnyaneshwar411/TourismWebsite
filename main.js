@@ -30,3 +30,7 @@ for (i = 0; i < document.querySelectorAll("#Destination #destCardList .card").le
 for (i = 0; i < document.querySelectorAll("#Services #servicesCardList .card").length; i++) {
     document.querySelectorAll("#Services #servicesCardList .card")[i].style.animationDelay = i * 0.3 + 's';
 }
+
+for (i = 0; i < document.querySelectorAll("#Blogs #blogCardList .card").length; i++) {
+    document.querySelectorAll("#Blogs #blogCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+}

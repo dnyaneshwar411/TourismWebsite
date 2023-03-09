@@ -66,6 +66,10 @@ button:hover {
     background-color: rgba(41, 217, 213, 0.2);
 }
 
+a:hover h5 {
+    color: #29d9d5;
+}
+
 input {
     color: #29d9d5;
     background-color: transparent;
@@ -284,6 +288,87 @@ header .fa-bars {
     color: #29d9d5;
     font-size: 4rem;
 }
+
+#Blogs {
+    text-align: center;
+}
+
+#Blogs #blogCardList {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#Blogs #blogCardList .card {
+    width: 22rem;
+    overflow: hidden;
+    background-color: #222;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1em;
+}
+
+#Blogs #blogCardList .card img {
+    width: 22rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+#Blogs #blogCardList .card .flex {
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#Blogs #blogCardList .card .flex i {
+    color: #29d9d5;
+}
+
+footer #footerHero {
+    background-color: #222;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-image: url('Images/man1.jpg');
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 5rem;
+}
+
+footer #footer {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+footer #footer div{
+    width: 18rem;
+    text-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer #footer #branding i {
+    color: #29d9d5;
+    font-size: 2rem;
+}
+
+footer #footer #socialLinks {
+    flex-direction: row;
+}
+
+footer #footer #newsletter {
+    gap: 0;
+}
+
+
+
+
 
 
 /* media queries */
