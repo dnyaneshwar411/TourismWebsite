@@ -184,7 +184,7 @@ header .fa-bars {
 }
 
 #Home #hero form {
-    min-width: 15rem;
+    padding-inline: 1rem;
     background-color: #222;
     border-radius: 1em;
     gap: 1rem;
@@ -211,6 +211,16 @@ header .fa-bars {
 #About #videoCarousel {
     width: max-content;
     overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#About #videoCarousel video {
+    max-width: 25rem;
+    object-fit: contain;
+    margin-inline: auto;
+    display: block;
 }
 
 #About #videoCarousel div {
@@ -345,7 +355,12 @@ footer #footer {
     flex-wrap: wrap;
 }
 
-footer #footer div{
+footer #footer p {
+    color: white;
+    text-align: left;
+}
+
+footer #footer div {
     width: 18rem;
     text-align: center;
     align-items: flex-start;
@@ -366,29 +381,38 @@ footer #footer #newsletter {
     gap: 0;
 }
 
-
+footer #copyright {
+    background-color: #222;
+    text-align: center;
+    padding-block: 2rem;
+}
 
 
 
 
 /* media queries */
 @media (max-width:1000px) {
+    html {
+        font-size: 70%;
+    }
+
     header .fa-bars {
         display: block;
-        z-index: 2;
+        z-index: 10;
     }
 
     header nav ul {
-        position: absolute;
+        position: fixed;
         background-color: #222;
         height: 100vh;
         width: 25rem;
-        right: -25rem;
+        right: -125rem;
         top: 0;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
         transition: right 0.25s;
+        z-index: 10;
     }
 
     header nav ul a {

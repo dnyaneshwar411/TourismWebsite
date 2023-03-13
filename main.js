@@ -5,6 +5,12 @@ document.querySelector("header nav .fa-bars").addEventListener("click", function
     navLinks.classList.toggle("navToggle");
 })
 
+for (i = 0; i < document.querySelectorAll("header nav ul li").length; i++) {
+    document.querySelectorAll("header nav ul li")[i].addEventListener("click", function () {
+        navLinks.classList.toggle("navToggle");
+    })
+}
+
 document.querySelectorAll("#About #videoCarousel .flex i")[0].addEventListener("click", function () {
     videos.setAttribute("src", "Images/video1.mp4");
 })
@@ -20,17 +26,17 @@ document.querySelectorAll("#About #videoCarousel .flex i")[2].addEventListener("
 
 // animation delays
 for (i = 0; i < document.querySelectorAll("header nav ul li").length; i++) {
-    document.querySelectorAll("header nav ul li")[i].style.animationDelay = i * 0.3 + 's';
+    document.querySelectorAll("header nav ul li")[i].style.animationDelay = i * 0.1 + 's';
 }
 
 for (i = 0; i < document.querySelectorAll("#Destination #destCardList .card").length; i++) {
-    document.querySelectorAll("#Destination #destCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+    document.querySelectorAll("#Destination #destCardList .card")[i].style.animationDelay = i * 0.2 + 's';
 }
 
 for (i = 0; i < document.querySelectorAll("#Services #servicesCardList .card").length; i++) {
-    document.querySelectorAll("#Services #servicesCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+    document.querySelectorAll("#Services #servicesCardList .card")[i].style.animationDelay = i * 0.1 + 's';
 }
 
 for (i = 0; i < document.querySelectorAll("#Blogs #blogCardList .card").length; i++) {
-    document.querySelectorAll("#Blogs #blogCardList .card")[i].style.animationDelay = i * 0.3 + 's';
+    document.querySelectorAll("#Blogs #blogCardList .card")[i].style.animationDelay = i * 0.1 + 's';
 }
